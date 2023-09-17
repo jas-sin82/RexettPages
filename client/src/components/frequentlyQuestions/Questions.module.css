@@ -1,0 +1,180 @@
+.processSection {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-bottom: 0px;
+  padding: 80px;
+  overflow: hidden;
+  margin-top: -60px;
+  background-color: #eeeeee83;
+  background-color: #f4f7fe;
+}
+
+.processHeading {
+  text-align: center;
+  width: 100%;
+}
+
+.processHeading h1 {
+  transition: all 0.35s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.795);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.processHeading h1 span {
+  font-size: 50px;
+}
+
+.uiSection {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0px;
+  width: 60%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.uiHeading {
+  padding: 10px;
+  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  width: 100%;
+}
+
+.designProcess {
+  padding: 20px 20px 25px 0px;
+  font-family: "Roboto Serif", sans-serif;
+  display: block;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #993130;
+  position: relative;
+  margin: 0 auto;
+}
+.designProcess div:nth-child(1) {
+  font-size: 16px;
+  padding-left: 0px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  text-align: start;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.designProcess div:nth-child(1) span {
+  font-size: 20px;
+  padding: 5px;
+  background-color: red;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  color: white;
+}
+
+.designProcess div:nth-child(2) {
+  font-size: 14px;
+  padding-left: 40px;
+  color: black;
+  font-weight: 500;
+  width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+  word-spacing: normal;
+  line-height: normal;
+}
+
+.arrowDown {
+  font-size: 16px;
+  position: absolute;
+  top: 0%;
+  transition: 0.5s;
+  right: 0%;
+}
+.arrowUp {
+  font-size: 16px;
+  position: absolute;
+  top: 0%;
+  transition: 0.5s;
+  transform: rotate(180deg);
+  right: 0%;
+}
+.active {
+  color: red;
+}
+.noActive {
+  color: black;
+}
+
+@media screen and (max-width: 1440px) {
+  .uiSection {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .uiSection {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .uiSection {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .processSection {
+    padding: 50px 20px 80px 20px;
+  }
+  .processHeading h1 {
+    font-size: 25px;
+  }
+  .designProcess div:nth-child(1) {
+    font-size: 14px;
+  }
+  .arrowDown {
+    right: -4%;
+  }
+  .arrowUp {
+    right: -4%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .processSection {
+    padding: 50px 5px 80px 5px;
+  }
+  .designProcess div:nth-child(1) span {
+    display: none;
+  }
+  .designProcess div:nth-child(2) {
+    padding-left: 0px;
+    font-weight: 500;
+  }
+  .uiSection {
+    margin-top: 20px;
+  }
+  .designProcess div:nth-child(1) {
+    font-size: 16px;
+  }
+  .processHeading {
+    text-align: start;
+    padding-left: 8px;
+    width: 80%;
+  }
+}

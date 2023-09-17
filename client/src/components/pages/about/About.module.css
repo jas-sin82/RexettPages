@@ -1,0 +1,420 @@
+.heroImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../../images/top-about.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #141e30;
+  position: relative;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+.heroImageHead {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.heroText {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  margin: auto 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: start;
+  display: block;
+  object-fit: contain;
+}
+
+.heroText h1 {
+  font-weight: 900 !important;
+  transition: all 0.35s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 100px;
+  color: transparent;
+  width: 50%;
+  padding: 10px 0px 10px 0px;
+  text-transform: capitalize;
+  -webkit-text-stroke: 1px skyblue;
+  -webkit-background-clip: text;
+  background-position: center;
+  background-repeat: repeat;
+  background-image: url("../../../images/back.png");
+  font-family: "Libre Baskerville", serif;
+}
+
+.heroText p:last-child {
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  padding: 0px;
+  margin-top: 16px;
+  text-align: start;
+  text-justify: inter-word;
+  font-size: 20px;
+  width: 50%;
+  word-spacing: 0%;
+}
+.home {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px;
+  width: 85%;
+  height: 600px;
+}
+
+.homeHeading {
+  flex-basis: 50%;
+  padding: 50px;
+  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  height: 100%;
+}
+
+.homeHeading > h1 {
+  font-weight: 900 !important;
+  transition: all 0.35s ease-in-out;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.795);
+  text-transform: capitalize;
+  font-family: "Libre Baskerville", serif;
+  border-left: 5px solid red;
+  padding-left: 10px;
+}
+
+.homeHeading > p {
+  font-family: "Roboto Serif", sans-serif;
+  color: black;
+  padding: 0px;
+  margin-top: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.spanPara {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.712);
+}
+
+.homeImage {
+  flex-basis: 50%;
+  background-image: url("../../../images/software-development-company.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.processSection {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-bottom: 70px;
+  background-color: white;
+  padding: 80px;
+  overflow: hidden;
+}
+
+.processHeading {
+  text-align: justify;
+  position: relative;
+  left: 9%;
+}
+
+.processHeading h1 {
+  transition: all 0.35s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.795);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-family: "Libre Baskerville", serif;
+  border-left: 5px solid red;
+  padding-left: 10px;
+}
+
+.processHeading h1 span {
+  font-size: 50px;
+}
+
+.processHeading p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto Serif", sans-serif;
+}
+.addBox {
+  margin-top: -40px;
+}
+
+.ChooseSection {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-bottom: 0px;
+  padding: 80px;
+  overflow: hidden;
+  background-color: #f4f7fe;
+}
+
+.chooseHeading {
+  text-align: justify;
+  position: relative;
+  left: 9%;
+}
+
+.chooseHeading h1 {
+  transition: all 0.35s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.795);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-family: "Libre Baskerville", serif;
+  border-left: 5px solid red;
+  padding-left: 8px;
+}
+
+.chooseHeading h1 span {
+  font-size: 50px;
+}
+
+.chooseHeading p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto Serif", sans-serif;
+}
+
+@media screen and (max-width: 1440px) {
+  .processHeading {
+    left: 5%;
+  }
+  .chooseHeading {
+    left: 7%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .processSection {
+    margin-bottom: 70px;
+    padding: 40px;
+  }
+
+  .homeImage {
+    margin-top: 0px;
+  }
+
+  .homeHeading {
+    padding: 0px 50px 0px 10px;
+  }
+
+  .heroText {
+    top: 35%;
+    left: 20%;
+  }
+
+  .heroText h1 {
+    font-size: 60px;
+  }
+
+  .heroText p:last-child {
+    width: 60%;
+  }
+
+  .ChooseSection {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .ChooseSection {
+    padding: 30px;
+    margin-top: -50px;
+  }
+
+  .chooseHeading {
+    margin-top: 20px;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .homeHeading {
+    padding: 0px 50px 0px 20px;
+  }
+  .homeHeading > p {
+    font-size: 13px;
+    font-weight: 500;
+    word-spacing: normal;
+  }
+  .home {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .processHeading {
+    margin-top: 20px;
+    left: 3%;
+  }
+
+  .processHeading h1 {
+    font-size: 30px;
+  }
+
+  .processHeading h1 span {
+    font-size: 50px;
+  }
+
+  .home {
+    padding: 0px;
+    flex-direction: column;
+    height: 800px;
+    max-height: 100%;
+  }
+
+  .homeHeading {
+    width: 100%;
+    padding: 30px;
+    margin: auto 0;
+    margin-top: 30px;
+    margin-bottom: -50px;
+  }
+
+  .homeImage {
+    margin-top: 20px;
+  }
+  .heroText {
+    top: 35%;
+    left: 5%;
+  }
+
+  .heroText h1 {
+    font-size: 60px;
+    width: 100%;
+  }
+
+  .heroText p:last-child {
+    width: 90%;
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  .addBox {
+    margin-top: -60px;
+  }
+  .heroImageHead {
+    height: 550px;
+  }
+  .chooseHeading {
+    left: 7%;
+  }
+
+  .chooseHeading h1 {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+
+  .chooseHeading h1 span {
+    font-size: 50px;
+  }
+  .ChooseSection {
+    padding-top: 30px;
+    margin-top: -60px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .processHeading {
+    left: 0%;
+    margin-top: 20px;
+  }
+
+  .processHeading h1 {
+    letter-spacing: 0px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+  }
+
+  .processHeading h1 span {
+    font-size: 40px;
+  }
+
+  .processHeading p {
+    font-size: 13px;
+    text-align: start;
+  }
+
+  .processSection {
+    padding: 10px;
+  }
+
+  .homeHeading {
+    width: 100%;
+    padding: 10px;
+    margin: auto 0;
+    margin-top: 30px;
+    margin-bottom: -50px;
+  }
+
+  .homeHeading > h1 {
+    font-size: 30px;
+  }
+  .heroText {
+    top: 32%;
+    left: 5%;
+  }
+
+  .heroText h1 {
+    font-size: 50px;
+  }
+
+  .heroText p:last-child {
+    width: 95%;
+    font-size: 14px;
+  }
+  .heroImageHead {
+    height: 400px;
+  }
+  .chooseHeading {
+    left: 6%;
+    margin-top: 50px;
+  }
+
+  .chooseHeading h1 {
+    letter-spacing: 0px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+  }
+
+  .chooseHeading h1 span {
+    font-size: 40px;
+  }
+
+  .chooseHeading p {
+    font-size: 15px;
+  }
+  .ChooseSection {
+    padding: 10px;
+    margin-bottom: -50px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .chooseHeading {
+    left: 2%;
+  }
+}

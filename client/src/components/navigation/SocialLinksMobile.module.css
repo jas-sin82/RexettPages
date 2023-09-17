@@ -1,0 +1,28 @@
+@media screen and (max-width: 1068px) {
+  .iconMobile {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+  }
+
+  .iconMobile span {
+    font-size: 30px;
+    padding: 12px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.719);
+  }
+}

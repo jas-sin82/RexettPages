@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+.footer {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  background-color: #141e30;
+  overflow: hidden;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContainer {
+  display: table;
+  width: 100%;
+  padding-left: 80px;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerSocial span {
+  padding: 0px 10px 0px 0px;
+}
+
+.footerLogo {
+  padding: 0px;
+  margin: auto 0;
+  display: table-cell;
+  text-align: center;
+}
+.footerLogo h1 {
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-family: "Zen Dots", cursive;
+}
+
+.footerLogo .faChart {
+  font-size: 100px;
+
+  background-image: linear-gradient(
+    to bottom right,
+    #0cebeb,
+    #0cebeb,
+    orange,
+    #e684ae,
+    rgb(18, 170, 230),
+    rgb(12, 158, 216)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.footerService,
+.footerCompany,
+.footerPolicy {
+  color: white;
+  margin: auto 0;
+  display: table-cell;
+  text-align: justify;
+}
+
+.footerService h2 {
+  padding: 0px 0px 10px 0px;
+  font-family: "Zen Dots", cursive;
+  margin-left: 0px;
+}
+
+.footerService ul li {
+  list-style: none;
+  font-size: 16px;
+  padding: 10px 0px 10px 0px;
+  margin-left: 0px;
+}
+
+.footerService ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerService ul li a.active {
+  color: rgba(22, 209, 223, 0.808);
+}
+
+.footerService ul li a:hover {
+  color: rgba(22, 209, 223, 0.808);
+}
+.footerCompany h2 {
+  padding: 10px 0px 10px 0px;
+  font-family: "Zen Dots", cursive;
+}
+
+.footerCompany ul li {
+  list-style: none;
+  font-size: 16px;
+  padding: 10px 0px 10px 0px;
+  margin-left: 0px;
+}
+.footerCompany ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerCompany ul li a:hover {
+  color: rgba(22, 209, 223, 0.808);
+}
+.footerCompany ul li a.active {
+  color: rgba(22, 209, 223, 0.808);
+}
+
+.footerPolicy ul li {
+  list-style: none;
+  font-size: 16px;
+  padding: 10px 0px 10px 0px;
+  margin-left: 0px;
+}
+.footerPolicy ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerPolicy ul li a:hover {
+  color: rgba(22, 209, 223, 0.808);
+}
+.footerPolicy ul li a.active {
+  color: rgba(22, 209, 223, 0.808);
+}
+
+.copyRight {
+  position: absolute;
+  bottom: 2%;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .footerContainer {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .footerLogo .faChart {
+    font-size: 80px;
+  }
+
+  .footerService h2 {
+    font-size: 20px;
+  }
+
+  .footerCompany h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerContainer {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    height: 600px;
+    width: 100%;
+  }
+
+  .footerService,
+  .footerCompany,
+  .footerPolicy {
+    color: white;
+    margin: auto 0;
+    padding: 20px;
+    text-align: justify;
+    display: inline-table;
+  }
+
+  .footerService {
+    margin-left: 0px;
+  }
+
+  .footerLogo {
+    padding: 5px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+  }
+
+  .footerLogo .faChart {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footerContainer {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .footer {
+    height: 1000px;
+    width: 100%;
+  }
+
+  .footerService,
+  .footerCompany,
+  .footerPolicy {
+    color: white;
+    margin: auto 0;
+    text-align: justify;
+    padding-left: 25px;
+  }
+
+  .footerService {
+    margin-left: 0px;
+  }
+
+  .footerLogo {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+  }
+}

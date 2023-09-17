@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  width: 100vw;
+  height: 70px;
+  margin: auto 0;
+  position: fixed;
+  text-align: center;
+  top: 0px;
+  padding: 50px 30px 40px 40px;
+  z-index: 50;
+}
+
+.navBarActive {
+  background-color: #141e30;
+}
+
+.logoImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logoImage .faChart {
+  font-size: 50px;
+  background-image: linear-gradient(
+    to bottom right,
+    #0cebeb,
+    #0cebeb,
+    orange,
+    #e684ae,
+    rgb(18, 170, 230),
+    rgb(12, 158, 216)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.logoImage a {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  flex-grow: 3;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-family: "Zen Dots", cursive;
+}
+
+@media screen and (max-width: 1068px) {
+  .logoImage {
+    margin-left: -10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logoImage {
+    margin-left: -27px;
+  }
+}

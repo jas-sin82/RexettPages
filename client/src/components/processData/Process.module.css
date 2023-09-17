@@ -1,0 +1,99 @@
+.cards {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.cardSection {
+  border-top: 5px solid red;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  flex-basis: 20%;
+  margin: 0px 5px 10px 5px;
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+  align-items: stretch;
+}
+
+.cardSection:hover {
+  border-top: none;
+}
+
+.cardSection h4 {
+  text-align: center;
+  font-family: "Roboto Serif", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+
+.cardSection p {
+  font-family: "Roboto Serif", sans-serif;
+  color: black;
+  padding-top: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1440px) {
+  .cards {
+    margin: 50px auto 0px auto;
+  }
+
+  .cardSection {
+    flex-basis: 22%;
+    margin: 0px 5px 10px 5px;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cardSection {
+    flex-basis: 30%;
+    margin: 0px 5px 10px 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardSection {
+    flex-basis: 46%;
+    margin: 0px 5px 15px 0px;
+    padding: 20px;
+  }
+  .cardSection h4 {
+    padding-top: 0px;
+    margin: 5px;
+    margin-bottom: 5px;
+  }
+  .cardSection p {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cardSection {
+    flex-basis: 100%;
+    margin: 0px 0px 15px 0px;
+    height: 250px;
+    padding: 10px;
+  }
+
+  .cards {
+    flex-direction: row;
+    margin: 30px auto 0px auto;
+  }
+}

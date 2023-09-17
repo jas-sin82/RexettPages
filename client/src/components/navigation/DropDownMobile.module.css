@@ -1,0 +1,55 @@
+li.dropLinkMobile {
+  box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.952);
+  width: 70%;
+  height: auto;
+  cursor: pointer;
+  list-style: none;
+  margin-left: 40px;
+  text-align: start;
+  border-bottom: 0.5px solid white;
+}
+
+li.dropLinkMobile:nth-child(7) {
+  border-bottom: none;
+}
+
+.dropDownMobile.clicked {
+  display: none;
+}
+
+.dropDownMobile a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.dropLinkMobile a:hover {
+  color: #0cebeb;
+  border-bottom: none;
+}
+
+.dropLinkMobile a.active {
+  color: rgb(22, 210, 223);
+}
+
+.dropLinkMobile a:hover::after {
+  width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+  li.dropLinkMobile {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  li.dropLinkMobile {
+    width: 100%;
+    height: auto;
+  }
+}

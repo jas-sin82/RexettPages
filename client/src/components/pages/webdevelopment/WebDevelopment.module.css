@@ -1,0 +1,642 @@
+.heroImageHead {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #3a1c71;
+  background: -webkit-linear-gradient(to bottom, #3a1c71, #d76d77, #ffaf7b);
+  background: linear-gradient(to bottom, #3a1c71, #d76d77, #ffaf7b);
+}
+
+.heroImage {
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.heroImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.heroText {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  margin: auto 0;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  text-align: start;
+}
+
+.heroText h1 {
+  font-weight: 900 !important;
+  transition: all 0.35s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 60px;
+  color: transparent;
+  padding: 0px;
+  width: 50%;
+  text-transform: capitalize;
+  -webkit-text-stroke: 1px white;
+  -webkit-background-clip: text;
+  background-position: center;
+  background-repeat: repeat;
+  background-image: url("../../../images/back.png");
+  font-family: "Libre Baskerville", serif;
+}
+
+.heroText p {
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  padding: 0px;
+  margin-top: 16px;
+  width: 50%;
+  text-align: start;
+  font-size: 16px;
+}
+
+.home {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px;
+  width: 85%;
+  height: 600px;
+}
+
+.homeHeading {
+  flex-basis: 50%;
+  padding: 50px;
+  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+.homeHeading > h1 {
+  font-weight: 900 !important;
+  transition: all 0.35s ease-in-out;
+  font-size: 40px;
+  width: 80%;
+  color: rgba(0, 0, 0, 0.795);
+  text-transform: capitalize;
+  font-family: "Libre Baskerville", serif;
+}
+
+.homeHeading > p {
+  font-family: "Roboto Serif", sans-serif;
+  color: black;
+  width: 80%;
+  padding: 0px;
+  margin-top: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.spanPara {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.712);
+}
+
+.homeImage {
+  flex-basis: 50%;
+  background-image: url("../../../images/webDevelopment.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  margin: auto 0;
+}
+
+.ChooseSection {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-bottom: 0px;
+  padding: 80px;
+  overflow: hidden;
+  background-color: #f4f7fe;
+}
+
+.chooseHeading {
+  text-align: start;
+  position: relative;
+  left: 10%;
+}
+
+.chooseHeading h1 {
+  transition: all 0.35s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 40px;
+  width: 60%;
+  color: rgba(0, 0, 0, 0.795);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.chooseHeading h1 span {
+  font-size: 50px;
+}
+
+.chooseHeading p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto Serif", sans-serif;
+}
+
+.processSection {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-bottom: 0px;
+  padding: 80px;
+  overflow: hidden;
+  margin-top: -40px;
+  background-color: #eeeeee83;
+}
+
+.processHeading {
+  text-align: start;
+  position: relative;
+  left: 5%;
+}
+
+.processHeading h1 {
+  transition: all 0.35s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.795);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: "Libre Baskerville", serif;
+}
+
+.processHeading h1 span {
+  font-size: 50px;
+}
+
+.uiSection {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.uiImage {
+  background-image: url("../../../images/Ready-to-grow-your-business.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  flex-basis: 40%;
+}
+
+.uiHeading {
+  flex-basis: 50%;
+  padding: 10px;
+  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+.designProcess {
+  padding: 20px 20px 20px 0px;
+  font-family: "Roboto Serif", sans-serif;
+  display: block;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #993130;
+  position: relative;
+  margin: 0 auto;
+}
+.designProcess div:nth-child(1) {
+  font-size: 15px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  text-align: start;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.designProcess div:nth-child(2) {
+  font-size: 13px;
+  padding: 0px;
+  color: black;
+  font-weight: 500;
+  width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+  word-spacing: normal;
+  line-height: normal;
+}
+
+.arrowDown {
+  font-size: 16px;
+  position: absolute;
+  top: 0%;
+  transition: 0.5s;
+  right: 0%;
+}
+
+.arrowUp {
+  font-size: 16px;
+  position: absolute;
+  top: 0%;
+  transition: 0.5s;
+  transform: rotate(180deg);
+  right: 0%;
+}
+
+@media screen and (max-width: 1440px) {
+  .chooseHeading {
+    left: 8%;
+  }
+  .homeHeading h1 {
+    width: 100%;
+  }
+
+  .homeHeading > p {
+    width: 100%;
+  }
+
+  .home {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .processHeading {
+    left: 0%;
+  }
+  .uiImage {
+    flex-basis: 48%;
+  }
+  .uiHeading {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .ChooseSection {
+    padding: 40px;
+  }
+
+  .chooseHeading h1 {
+    width: 80%;
+  }
+
+  .chooseHeading h1 span {
+    font-size: 50px;
+  }
+  .homeImage {
+    margin: auto 0;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .heroText {
+    left: 25%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .heroText p {
+    width: 65%;
+  }
+  .heroText h1 {
+    font-size: 60px;
+    width: 70%;
+  }
+
+  .processSection {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    padding: 80px;
+  }
+  .home {
+    width: 90%;
+  }
+  .homeHeading {
+    padding: 10px;
+    margin: auto 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .uiImage {
+    flex-basis: 48%;
+  }
+  .designProcess {
+    padding: 5px 5px 5px 0px;
+  }
+  .homeImage {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .ChooseSection {
+    padding: 30px;
+  }
+
+  .chooseHeading {
+    margin-top: 30px;
+    left: 5%;
+  }
+  .chooseHeading h1 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .heroText {
+    left: 20%;
+    top: 35%;
+  }
+  .heroText p {
+    width: 60%;
+  }
+  .heroText h1 {
+    font-size: 50px;
+  }
+  .homeHeading > p {
+    font-size: 14px;
+  }
+
+  .home {
+    display: block;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin-top: 80px;
+  }
+
+  .homeHeading {
+    width: 85%;
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .homeImage {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+  }
+
+  .homeHeading > h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .processSection {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+  }
+
+  .processHeading {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    left: 3%;
+    width: 90%;
+    text-align: start;
+  }
+
+  .uiSection {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .uiImage {
+    width: 100vw;
+    height: 500px;
+    max-height: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .uiHeading {
+    margin-top: 0px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .designProcess {
+    padding: 20px 20px 20px 0px;
+  }
+  .designProcess div:nth-child(1) {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .designProcess div:nth-child(2) {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroText {
+    left: 17%;
+    top: 35%;
+  }
+  .heroText p {
+    width: 75%;
+  }
+  .heroText h1 {
+    width: 80%;
+  }
+
+  .chooseHeading {
+    left: 2%;
+    margin-top: 40px;
+  }
+
+  .chooseHeading h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin: 0 auto;
+    width: 99%;
+  }
+
+  .ChooseSection {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+  }
+
+  .processHeading {
+    left: 3%;
+    text-align: center;
+  }
+
+  .processHeading h1 {
+    font-size: 40px;
+    letter-spacing: 0px;
+  }
+
+  .processHeading h1 span {
+    font-size: 50px;
+  }
+  .processSection {
+    padding: 0px;
+    margin-top: -60px;
+  }
+  .uiHeading {
+    margin: 0 auto;
+    width: 95%;
+  }
+  .uiSection {
+    margin-bottom: 40px;
+  }
+  .uiImage {
+    margin: 0 auto;
+    margin-top: 0px;
+  }
+  .homeHeading {
+    width: 94%;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  .processHeading {
+    left: 0%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .uiImage {
+    margin-top: -40px;
+  }
+
+  .heroText {
+    left: 6%;
+    top: 35%;
+  }
+  .heroText p {
+    width: 90%;
+  }
+  .heroText h1 {
+    width: 90%;
+    font-size: 40px;
+  }
+
+  .homeImage {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 350px;
+    max-height: 100%;
+    background-size: contain;
+  }
+
+  .home {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .chooseHeading h1 {
+    letter-spacing: 0px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    width: 100%;
+  }
+
+  .ChooseSection {
+    padding: 10px;
+    margin-top: 0px;
+  }
+  .processHeading h1 {
+    font-size: 25px;
+  }
+  .uiImage {
+    margin-bottom: -30px;
+    margin-top: -60px;
+  }
+  .uiHeading {
+    width: 96%;
+  }
+  .homeHeading h1 {
+    font-size: 25px;
+  }
+  .chooseHeading h1 span {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heroText {
+    left: 6%;
+    top: 35%;
+  }
+  .heroText p {
+    width: 90%;
+  }
+  .heroText h1 {
+    width: 100%;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .ChooseSection {
+    margin-top: 0px;
+    padding: 5px;
+  }
+  .chooseHeading {
+    left: 0%;
+    text-align: center;
+  }
+  .uiImage {
+    margin-bottom: -80px;
+    margin-top: -100px;
+  }
+  .uiHeading {
+    width: 96%;
+  }
+  .heroText {
+    left: 6%;
+    top: 35%;
+  }
+  .heroText h1 {
+    width: 100%;
+    font-size: 35px;
+  }
+}

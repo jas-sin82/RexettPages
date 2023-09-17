@@ -1,0 +1,8 @@
+.alert {
+  color: white;
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: "Roboto Serif", sans-serif;
+}

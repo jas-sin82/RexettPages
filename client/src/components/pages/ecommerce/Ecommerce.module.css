@@ -1,0 +1,238 @@
+.heroImageEcommerce {
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  background: #3a1c71;
+  background: -webkit-linear-gradient(to bottom, #3a1c71, #d76d77, #ffaf7b);
+  background: linear-gradient(to bottom, #3a1c71, #d76d77, #ffaf7b);
+  position: relative;
+}
+
+.heroImageEcommerce img {
+  height: 75%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  right: 10%;
+}
+
+.heroTextEcommerce {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  margin: auto 0;
+  height: 100%;
+  width: 80%;
+  padding: 0px;
+  text-align: start;
+}
+
+.heroTextEcommerce h1 {
+  font-weight: 900 !important;
+  transition: all 0.35s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 60px;
+  color: transparent;
+  padding: 0px;
+  width: 50%;
+  text-transform: capitalize;
+  -webkit-text-stroke: 1px white;
+  -webkit-background-clip: text;
+  background-position: center;
+  background-repeat: repeat;
+  background-image: url("../../../images/back.png");
+  font-family: "Libre Baskerville", serif;
+}
+
+.heroTextEcommerce p {
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  padding: 0px;
+  margin-top: 16px;
+  width: 50%;
+  text-align: start;
+  font-size: 16px;
+}
+
+.homeImageEcommerce {
+  flex-basis: 50%;
+  background-image: url("../../../images/Group-138-min.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  margin: auto 0;
+}
+
+.processHeadingEcommerce h1 {
+  transition: all 0.35s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.795);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  width: 70%;
+  font-family: "Libre Baskerville", serif;
+}
+
+.processHeadingEcommerce {
+  text-align: start;
+  position: relative;
+  left: 5%;
+}
+
+.processHeading h1 span {
+  font-size: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+  .heroTextEcommerce h1 {
+    font-size: 40px;
+    width: 50%;
+  }
+
+  .heroTextEcommerce {
+    top: 37%;
+    left: 8%;
+  }
+
+  .heroImageEcommerce img {
+    height: 60%;
+    width: 100%;
+    left: 20%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .homeImageEcommerce {
+    margin: auto 0;
+    margin-bottom: 60px;
+  }
+  .processHeadingEcommerce {
+    text-align: start;
+    position: relative;
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .homeImageEcommerce {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .homeImageEcommerce {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 400px;
+  }
+
+  .processHeadingEcommerce {
+    left: 3%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  .processHeadingEcommerce h1 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .heroTextEcommerce h1 {
+    font-size: 40px;
+    width: 90%;
+  }
+
+  .heroTextEcommerce {
+    top: 25%;
+    left: 10%;
+    width: 90%;
+  }
+
+  .heroImageEcommerce img {
+    height: 60%;
+    width: 100%;
+    left: 0%;
+    top: 40%;
+    right: 0%;
+  }
+
+  .heroTextEcommerce p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .processHeadingEcommerce {
+    left: 0%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  .homeImageEcommerce {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 350px;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heroTextEcommerce h1 {
+    font-size: 35px;
+    width: 100%;
+  }
+  .heroTextEcommerce {
+    top: 25%;
+    left: 10%;
+    width: 90%;
+  }
+
+  .heroImageEcommerce img {
+    height: 100%;
+    width: 100%;
+    top: 20%;
+  }
+  .heroText1 p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .processHeadingEcommerce h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heroTextEcommerce h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+  .heroTextEcommerce {
+    top: 25%;
+    left: 10%;
+    width: 90%;
+  }
+
+  .heroImageEcommerce img {
+    height: 100%;
+    width: 100%;
+    top: 20%;
+    right: 0%;
+  }
+  .heroTextEcommerce p {
+    width: 90%;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,274 @@
+.mobile {
+  color: black;
+  width: 100px;
+  display: none;
+}
+.mobileClose {
+  display: none;
+}
+.navListMobile {
+  display: none;
+}
+
+@media screen and (max-width: 1068px) {
+  .mobile {
+    color: #3fada8;
+    color: white;
+    background-image: linear-gradient(
+      to bottom right,
+      #0cebeb,
+      #0cebeb,
+      orange,
+      #e684ae,
+      rgb(18, 170, 230),
+      rgb(12, 158, 216)
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    width: 40px;
+    display: block;
+    z-index: 1000;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .mobileClose {
+    color: white;
+    width: 70px;
+    display: block;
+    z-index: 1000;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .navListMobile {
+    width: auto;
+    height: 100%;
+    display: block;
+    position: absolute;
+    transition: 0.3s ease-in-out 1s;
+    z-index: 1000;
+  }
+
+  .navListMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    right: 0px;
+    top: 0%;
+    transition: 9s ease-in-out !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../../images/brandmark-design\ \(2\).png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    width: 100%;
+    outline-style: none !important;
+    border: none;
+    z-index: 1000;
+  }
+  .navListMobile ul {
+    margin: 0px;
+    padding: 80px 0px 0px 30px;
+    width: 50%;
+    height: 100%;
+  }
+
+  .navListMobile li {
+    text-align: start;
+    padding: 15px;
+    list-style: none;
+    width: 100%;
+  }
+
+  .navListMobile li a {
+    color: white;
+    letter-spacing: 2px !important;
+    text-decoration: none;
+    margin-left: 0px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .listMobile a.active {
+    color: rgb(22, 210, 223);
+  }
+
+  .navListMobile li span {
+    color: white;
+    letter-spacing: 2px !important;
+    position: relative;
+    margin-left: 0px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .navListMobile li span.active {
+    color: rgb(22, 210, 223);
+  }
+
+  .navListMobile li.homePage {
+    color: white;
+    letter-spacing: 2px !important;
+    text-decoration: none;
+    margin-left: 0px;
+    font-family: "Nunito Sans", sans-serif;
+    animation: fadeIn 0.2s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .navListMobile li.aboutPage {
+    color: white;
+    letter-spacing: 2px !important;
+    text-decoration: none;
+    margin-left: 0px;
+    font-family: "Nunito Sans", sans-serif;
+
+    animation: fadeIn 0.4s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .navListMobile li.servicePage {
+    color: white;
+    letter-spacing: 2px !important;
+    text-decoration: none;
+    margin-left: 0px;
+    font-family: "Nunito Sans", sans-serif;
+
+    animation: fadeIn 0.6s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .navListMobile li.blogPage {
+    color: white;
+    letter-spacing: 2px !important;
+    text-decoration: none;
+    margin-left: 0px;
+    font-family: "Nunito Sans", sans-serif;
+
+    animation: fadeIn 0.8s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .navListMobile li.contactPage {
+    color: white;
+    letter-spacing: 2px !important;
+    text-decoration: none;
+    margin-left: 0px;
+    font-family: "Nunito Sans", sans-serif;
+
+    animation: fadeIn 0.9s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  li.listMobile a:hover {
+    height: 100%;
+    width: auto;
+    color: #0cebeb;
+  }
+
+  li.listMobile a:hover::after {
+    width: 0% !important;
+  }
+  .arrowDown {
+    font-size: 16px;
+
+    position: absolute;
+    top: 15%;
+  }
+  .arrowUp {
+    font-size: 16px;
+    position: absolute;
+    top: 15%;
+    transform: rotate(180deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .navListMobile ul {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mobile {
+    margin-right: -15px;
+  }
+
+  .mobileClose {
+    color: white;
+    width: 20px;
+    display: block;
+    z-index: 1000;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .navListMobile ul {
+    padding: 80px 0px 0px 10px;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navListMobile ul {
+    width: 80%;
+  }
+}

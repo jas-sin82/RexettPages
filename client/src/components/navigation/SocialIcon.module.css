@@ -1,0 +1,53 @@
+.icon {
+  font-size: 18px;
+  position: fixed;
+  top: 30%;
+  left: 0%;
+  z-index: 2;
+  padding-right: 5px;
+  background: #3a1c71;
+  background: -webkit-linear-gradient(to bottom, #3a1c71, #d76d77, #ffaf7b);
+  background: linear-gradient(to bottom, #3a1c71, #d76d77, #ffaf7b);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.icon span {
+  padding: 5px;
+  width: 2rem;
+  height: 2rem;
+  transition: width 0.25s ease-in-out 0.25s;
+  text-align: center;
+  display: block;
+  margin: 25px 0px;
+}
+
+.linkedin,
+.facebook,
+.instagram {
+  cursor: pointer;
+  color: white;
+}
+
+.linkedin:hover,
+.facebook:hover,
+.instagram :hover {
+  color: rgba(22, 209, 223, 0.808);
+}
+
+@media screen and (max-width: 1068px) {
+  .icon {
+    font-size: 18px;
+  }
+
+  .icon span {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icon {
+    display: none;
+  }
+}

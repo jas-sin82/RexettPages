@@ -1,0 +1,565 @@
+.heroImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../../images/blogpage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+.heroImageHead {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.heroText {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: start;
+  display: block;
+  object-fit: contain;
+}
+
+.heroText h1 {
+  font-weight: 900 !important;
+  transition: all 0.35s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 80px;
+  color: transparent;
+  width: 50%;
+  padding: 10px 0px 10px 0px;
+  text-transform: capitalize;
+  -webkit-text-stroke: 1px white;
+  -webkit-background-clip: text;
+  background-position: center;
+  background-repeat: repeat;
+  background-image: url("../../../images/back.png");
+  font-family: "Libre Baskerville", serif;
+}
+
+.home {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 50px 0px 0px 0px;
+  padding: 40px;
+}
+
+.homeHeading {
+  padding: 0px;
+  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.homeHeading > h1 {
+  font-weight: 900 !important;
+  transition: all 0.35s ease-in-out;
+  letter-spacing: 1px;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Libre Baskerville", serif;
+}
+
+.cards {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.cardSection {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  margin: 0 auto;
+  padding: 60px;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  background-color: #e3f3f8;
+  line-height: 1.7;
+  position: relative;
+}
+.cardSection h2 {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: start;
+  color: black;
+  font-size: 16px;
+}
+
+.cardSection > p {
+  text-align: center;
+  font-family: "Roboto Serif", sans-serif;
+  font-size: 12px;
+  text-align: start;
+  padding: 3px;
+  font-weight: 600;
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+
+.phone {
+  margin-top: 50px;
+  text-align: left;
+  font-family: "Roboto Serif", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+
+.iconPhone {
+  color: orangered;
+}
+.phoneCircle {
+  border: 2px solid orangered;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.phoneNumber {
+  padding-left: 42px;
+  margin-top: 0px;
+  font-family: "Roboto Serif", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: orangered;
+}
+
+.mail {
+  margin-top: 20px;
+  text-align: left;
+  font-family: "Roboto Serif", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.iconMail {
+  color: orangered;
+}
+.mailCircle {
+  border: 2px solid orangered;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.email {
+  padding-left: 42px;
+  font-family: "Roboto Serif", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 0px;
+  color: orangered;
+}
+
+.extra {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Roboto Serif", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.proposal {
+  text-align: center;
+  font-family: "Roboto Serif", sans-serif;
+  font-size: 13px;
+  text-align: start;
+  padding: 3px;
+  width: 100%;
+  font-weight: 600;
+  color: green;
+}
+
+.mailBulkCircle {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 50px;
+  margin: 0 auto;
+  position: absolute;
+  top: -8%;
+  height: 100px;
+  width: 100px;
+  display: block;
+}
+span > .mailBulk {
+  color: orangered;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*---leftside---*/
+.cardSectionLeft {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  margin: 0 auto;
+  padding: 60px;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  background-color: #f4f7fe;
+  line-height: 1.7;
+  position: relative;
+}
+.cardSectionLeft h2 {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: start;
+  color: black;
+  font-size: 16px;
+}
+
+.cardSectionLeft P {
+  text-align: center;
+  font-family: "Roboto Serif", sans-serif;
+  font-size: 13px;
+  text-align: start;
+  padding: 3px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.smileyCircle {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 50px;
+  margin: 0 auto;
+  position: absolute;
+  top: -13%;
+  height: 100px;
+  width: 100px;
+  display: block;
+}
+.smiley {
+  color: orangered;
+  text-align: center;
+  margin: 0 auto;
+}
+p.companyNumber {
+  font-size: 14px;
+  text-align: center;
+  color: orangered;
+  letter-spacing: 1px;
+}
+
+.cardSectionLeftCenter {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  margin: 0px 5px 10px 5px;
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  background-color: #d6eeee;
+  position: relative;
+  line-height: 1.7;
+}
+.cardSectionLeftCenter h2 {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: start;
+  color: black;
+  font-size: 16px;
+}
+
+.cardSectionLeftCenter P {
+  text-align: center;
+  font-family: "Roboto Serif", sans-serif;
+  font-size: 13px;
+  text-align: start;
+  padding: 3px;
+  width: 100%;
+  font-weight: 600;
+}
+.envelopeCircle {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 50px;
+  margin: 0 auto;
+  position: absolute;
+  top: -13%;
+  height: 90px;
+  width: 90px;
+  display: block;
+}
+.envelope {
+  color: orangered;
+  text-align: center;
+  margin: 0 auto;
+}
+
+p.emailQuote {
+  font-size: 14px;
+  text-align: center;
+  color: orangered;
+  letter-spacing: 1px;
+}
+
+/*---curve wave---*/
+.customShapeDividerBottom1688657783 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.customShapeDividerBottom1688657783 img {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 184px;
+}
+
+@media screen and (max-width: 1460px) {
+  .heroText h1 {
+    width: 60%;
+  }
+  .heroText {
+    left: 15%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px;
+  }
+  .heroText h1 {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .homeHeading {
+    padding-right: 0px;
+    margin-left: 20px;
+  }
+  .cardSection {
+    padding: 20px;
+  }
+  .cardSectionLeft {
+    padding: 20px;
+  }
+  .cardSectionLeftCenter {
+    padding: 20px;
+  }
+  .envelopeCircle {
+    top: -22%;
+  }
+  .smileyCircle {
+    top: -22%;
+  }
+  .mailBulkCircle {
+    top: -14%;
+  }
+}
+
+@media screen and (max-width: 1067px) {
+  .home {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .cardSection {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    align-items: stretch;
+    margin-top: 0px;
+  }
+
+  .homeHeading {
+    flex-basis: 90%;
+    padding-right: 0px;
+    margin: 0 auto;
+  }
+
+  .homeHeading > h1 {
+    font-size: 42px;
+  }
+
+  .heroText h1 {
+    width: 70%;
+  }
+
+  .cardSectionLeft {
+    padding: 20px;
+    height: auto;
+    line-height: 2;
+  }
+
+  .cardSectionLeftCenter {
+    padding: 20px;
+    margin-top: 0px;
+    height: auto;
+    line-height: 2;
+  }
+
+  .envelopeCircle {
+    top: -33%;
+    background-color: transparent;
+    border-radius: 0px;
+  }
+  .smileyCircle {
+    top: -25%;
+    background-color: transparent;
+    border-radius: 0px;
+  }
+  .mailBulkCircle {
+    top: -14%;
+    background-color: transparent;
+    border-radius: 0px;
+  }
+  .cards {
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .customShapeDividerBottom1688657783 img {
+    width: calc(152% + 1.3px);
+    height: 154px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .customShapeDividerBottom1688657783 img {
+    width: calc(114% + 1.3px);
+    height: 84px;
+  }
+
+  .homeHeading {
+    flex-basis: 95%;
+  }
+
+  .heroText {
+    left: 10%;
+    padding: 0px;
+    top: 35%;
+  }
+
+  .heroText h1 {
+    width: 80%;
+  }
+  .envelopeCircle {
+    top: -25%;
+  }
+  .mailBulkCircle {
+    top: -12%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .heroText {
+    left: 0%;
+    top: 40%;
+    padding: 0px;
+  }
+
+  .heroText h1 {
+    width: 100%;
+    font-size: 60px;
+  }
+
+  .envelopeCircle {
+    top: -18%;
+    font-size: 30px;
+  }
+  .mailBulkCircle {
+    top: -8%;
+    font-size: 35px;
+  }
+  .smileyCircle {
+    top: -18%;
+    font-size: 30px;
+  }
+  .cardSectionLeftCenter {
+    padding: 10px;
+  }
+  .cardSectionLeft {
+    padding: 10px;
+  }
+  .cardSection {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .envelopeCircle {
+    top: -17%;
+    font-size: 30px;
+  }
+  .mailBulkCircle {
+    top: -10%;
+    font-size: 35px;
+  }
+  .smileyCircle {
+    top: -15%;
+    font-size: 30px;
+  }
+  .cardSectionLeftCenter {
+    padding: 5px;
+    line-height: 1.7;
+  }
+  .cardSectionLeft {
+    padding: 5px;
+    line-height: 1.7;
+  }
+  .cardSection {
+    padding: 5px;
+    line-height: 1.7;
+  }
+}

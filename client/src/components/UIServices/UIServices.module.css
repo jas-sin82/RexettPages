@@ -1,0 +1,153 @@
+.cards {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.cardSection {
+  transition: 0.3s;
+  flex-wrap: wrap;
+  flex-basis: 25%;
+  margin: 0px 40px 0px 5px;
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+  max-height: 100%;
+  align-items: stretch;
+}
+
+.cardSection h1 {
+  text-align: start;
+  font-family: "Roboto Serif", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  border-bottom: 5px solid red;
+  padding-bottom: 8px;
+  border-bottom-width: 50%;
+}
+
+.cardSection p {
+  font-family: "Roboto Serif", sans-serif;
+  color: black;
+  padding-top: 10px;
+  margin-top: 10px;
+  text-align: start;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.card {
+  display: none;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  flex-direction: row;
+  height: auto;
+  width: 40%;
+}
+
+.cardMobile {
+  display: none;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 1450px) {
+  .cardSection {
+    margin: 0px 40px 40px 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cardSection {
+    margin: 10px 40px 50px 5px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .cardSection {
+    flex-basis: 40%;
+    margin: 10px 40px 50px 5px;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 1068px) {
+  .cardSection {
+    margin: 10px 40px 20px 5px;
+    padding: 0px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardSection {
+    padding-right: 10px;
+    width: 100%;
+    margin: 10px 5px 40px 5px;
+    height: 100%;
+  }
+  .cardSection h1 {
+    font-size: 18px;
+    padding-bottom: 5px;
+    width: 100%;
+  }
+
+  .cardSection p {
+    margin-top: 2px;
+    width: 100%;
+  }
+
+  .cards {
+    display: none;
+  }
+
+  .card {
+    display: block;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    object-fit: cover;
+    margin: 50px auto;
+    margin-top: 20px;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cardSection h1 {
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .card {
+    display: none;
+  }
+  .cardMobile {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cardMobile {
+    width: 95%;
+  }
+}
