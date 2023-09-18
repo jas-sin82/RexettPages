@@ -1,12 +1,7 @@
-import developemnt from "../../images/webDevelopment.png";
-import webDesign from "../../images/mobile-app-development.png";
-import mobileApp from "../../images/mobile-app.png";
-import eCommerce from "../../images/eCommerce.png";
-
 const data = [
   {
     id: 1,
-    image: developemnt,
+    image: "../../images/webDevelopment.png",
     title: "Web Development",
     url: "/service/webdevelopment",
     description:
@@ -14,7 +9,7 @@ const data = [
   },
   {
     id: 2,
-    image: webDesign,
+    image: "../../images/mobile-app-development.png",
     title: "Web Design",
     url: "/service/webdesign",
     description:
@@ -22,7 +17,7 @@ const data = [
   },
   {
     id: 3,
-    image: mobileApp,
+    image: "../../images/mobile-app.png",
     title: "Mobile App",
     url: "/service/mobileapp",
     description:
@@ -30,7 +25,7 @@ const data = [
   },
   {
     id: 4,
-    image: eCommerce,
+    image: "../../images/eCommerce.png",
     title: "Ecommerce",
     url: "/service/ecommerce",
     description:
