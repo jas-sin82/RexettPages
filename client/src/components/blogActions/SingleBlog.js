@@ -1,7 +1,11 @@
 import axios from "axios";
 
+const axiosInstance = axios.create({
+  baseURL: process.env.REACT_APP_API_URL,
+});
+
 export const getBlogById = (id) => {
-  return axios
+  return axiosInstance
     .get(`/blogPost/${id}`)
     .then((res) => res.data)
     .catch((error) => {
@@ -10,7 +14,7 @@ export const getBlogById = (id) => {
 };
 
 export const blogArticles = () => {
-  return axios
+  return axiosInstance
     .get("/blogPost")
     .then((posts) => posts.data)
     .catch((error) => {

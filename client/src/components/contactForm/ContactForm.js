@@ -8,7 +8,9 @@ import { registerSchema } from "../../Schema/formSchema";
 
 const ContactForm = () => {
   const [show, setShow] = useState(false);
-
+  const axiosInstance = axios.create({
+    baseURL: process.env.REACT_APP_API_URL,
+  });
   const {
     register,
     handleSubmit,
@@ -21,7 +23,7 @@ const ContactForm = () => {
   const sendMailHandler = async (data) => {
     console.log(data);
     try {
-      const response = await axios.post("/sendMail", data);
+      const response = await axiosInstance.post("/sendMail", data);
 
       response.json().then((data) => {
         console.log(data);
