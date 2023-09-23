@@ -5,9 +5,7 @@ import Navigation from "../../navigation/Navigation";
 import SocialIcon from "../../navigation/SocialIcon";
 import ContactForm from "../../contactForm/ContactForm";
 import Footer from "../../Footer/Footer";
-import wave2 from "../../../images/triangleAsymmetrical.svg";
 import Subscription from "../../Subscription/Subscription";
-import data from "../../data/UIData";
 import { mobileAppProcess } from "../../data/mobileAppProcess";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -17,6 +15,11 @@ import AppCard from "../../mobileAppData/mobileData";
 import AddBox from "../../AddBox/AddBox";
 import MobileAppQuestion from "../../frequentlyQuestions/MobileAppQuestions";
 import ScrollUp from "../../scrollUpWindow/ScrollUp";
+import webDev from "../../../images/webdev10.png";
+import mobileApp from "../../../images/mobile-app.png";
+import ecommerce from "../../../images/eCommerce.png";
+
+const data = [webDev, mobileApp, ecommerce];
 
 const MobileApp = () => {
   const [dropDown, setDropDown] = useState({});
@@ -63,20 +66,17 @@ const MobileApp = () => {
                   }}
                   modules={[Autoplay]}
                 >
-                  {data.map((data) => (
+                  {data.map((image, index) => (
                     <SwiperSlide>
                       {" "}
-                      <div key={data.id}>
-                        <img src={data.image} alt="slider Images" />
+                      <div key={index}>
+                        <img src={image} alt="slider Images" />
                       </div>
                     </SwiperSlide>
                   ))}
                 </Swiper>
               </div>
             </div>
-          </div>
-          <div className={classes.customShapeDividerBottom1688657783}>
-            <img src={wave2} alt="waverImage" />
           </div>
         </div>
         <div className={classes.home}>

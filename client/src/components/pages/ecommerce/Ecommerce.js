@@ -13,11 +13,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
-import dataEcommerce from "../../data/ecommerceheader";
 import EcommerceData from "../../ecommerceDevelopment/Ecommerce";
 import EcommerceQuestion from "../../frequentlyQuestions/EcommerceQuestion";
 import AddBox from "../../AddBox/AddBox";
 import ScrollUp from "../../scrollUpWindow/ScrollUp";
+import shopImage from "../../../images/shop.png";
+import ecommerceImage from "../../../images/e-commerce.png";
+
+const dataEcommerce = [
+  {
+    id: 1,
+    image: shopImage,
+    title: "eCommerce Website Development Company",
+    description:
+      "Cutting-Edge eCommerce Web Development Services for Versatile Industry Needs",
+  },
+  {
+    id: 2,
+    image: ecommerceImage,
+    title: "Providing the quality-assuring Ecommerce solutions",
+    description: "Delivering Right-To-The-Need Web Development Services.",
+  },
+];
 
 const Ecommerce = () => {
   const [dropDown, setDropDown] = useState({});

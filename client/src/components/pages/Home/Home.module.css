@@ -393,9 +393,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   width: 80%;
-  height: 400px;
+  height: 350px;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .Button {

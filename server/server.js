@@ -49,7 +49,6 @@ const blogSchema = new Schema({
 const BlogPost = mongoose.model("blogpost", blogSchema);
 
 const mailChimpKey = new mailChimp(mcApiKey);
-const port = process.env.PORT || 3001;
 
 // api endpoints
 app.get("/api/newsletter", (req, res) => {
@@ -125,6 +124,6 @@ app.get("/blogPost/:id", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
+app.listen(3001, () => {
   console.log("Server is running on Port 3001");
 });

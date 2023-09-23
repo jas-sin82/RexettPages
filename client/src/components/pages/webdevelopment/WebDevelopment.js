@@ -12,11 +12,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
-import dataWeb from "../../data/webdevelopmentData";
 import WebDevelopmentServices from "../../webDevelopmentServices/WebDevelopment";
 import Questions from "../../frequentlyQuestions/Questions";
 import AddBox from "../../AddBox/AddBox";
 import ScrollUp from "../../scrollUpWindow/ScrollUp";
+import rexettMain from "../../../images/rexett-main-image.png";
+import contactImage from "../../../images/contact-form-bg.png";
+
+const dataWeb = [
+  {
+    id: 1,
+    image: rexettMain,
+    title: "Web Development Company",
+    description:
+      "We design and develop high-grade websites that provide a visually appealing and interactive web experience.",
+  },
+  {
+    id: 2,
+    image: contactImage,
+    title: "Providing the quality-assuring website solutions",
+    description: "Delivering Right-To-The-Need Web Development Services.",
+  },
+];
 
 const WebDevelopment = () => {
   const [dropDown, setDropDown] = useState({});

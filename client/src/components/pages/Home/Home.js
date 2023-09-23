@@ -16,11 +16,31 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
-import HeroImageData from "../../data/heroImageData";
 import ScrollUp from "../../scrollUpWindow/ScrollUp";
 import HomePageBlog from "../../homePageBlog/HomePageBlog";
 import DropDownContact from "../../dropDownContact/DropDownContact";
 import { motion, useScroll, useTransform } from "framer-motion";
+import brandMark from "../../../images/brandmark-design (2).png";
+import mountain from "../../../images/Mountain.png";
+
+const heroImageData = [
+  {
+    id: 1,
+    image: brandMark,
+    title: "Web & Mobile Application Development",
+    subHeading: "Custom Software Development",
+    description:
+      "We design and develop high-grade websites that provide a visually appealing and interactive web experience.",
+  },
+  {
+    id: 2,
+    image: mountain,
+    subHeading: "Custom Software Development",
+    title: "We help businesses turn clicks into customers",
+    description:
+      " Rexett is a Sweden-based boutique, we are software development company that provides digital solutions.",
+  },
+];
 
 const Home = () => {
   const [showContact, setShowContact] = useState(false);
@@ -84,7 +104,7 @@ const Home = () => {
           }}
           modules={[Pagination, Autoplay]}
         >
-          {HeroImageData.map((data) => (
+          {heroImageData.map((data) => (
             <SwiperSlide>
               {" "}
               <div className={classes.heroImage} key={data.id}>
