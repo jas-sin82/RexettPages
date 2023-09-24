@@ -15,11 +15,6 @@ import UIServiecs from "../../UIServices/UIServices";
 import AddBox from "../../AddBox/AddBox";
 import WebDesignQuestion from "../../frequentlyQuestions/WebDesignQuestions";
 import ScrollUp from "../../scrollUpWindow/ScrollUp";
-import webDev from "../../../images/webdev10.png";
-import mobileApp from "../../../images/mobile-app.png";
-import ecommerce from "../../../images/eCommerce.png";
-
-const data = [webDev, mobileApp, ecommerce];
 
 const WebDesign = () => {
   const [dropDown, setDropDown] = useState({});
@@ -67,14 +62,15 @@ const WebDesign = () => {
                   }}
                   modules={[Autoplay]}
                 >
-                  {data.map((image, index) => (
-                    <SwiperSlide>
-                      {" "}
-                      <div key={index}>
-                        <img src={image} alt="slider Images" />
-                      </div>
-                    </SwiperSlide>
-                  ))}
+                  <SwiperSlide>
+                    <div className={classes.image1}></div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className={classes.image2}></div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className={classes.image3}></div>
+                  </SwiperSlide>
                 </Swiper>
               </div>
             </div>

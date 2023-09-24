@@ -17,24 +17,6 @@ import EcommerceData from "../../ecommerceDevelopment/Ecommerce";
 import EcommerceQuestion from "../../frequentlyQuestions/EcommerceQuestion";
 import AddBox from "../../AddBox/AddBox";
 import ScrollUp from "../../scrollUpWindow/ScrollUp";
-import shopImage from "../../../images/shop.png";
-import ecommerceImage from "../../../images/e-commerce.png";
-
-const dataEcommerce = [
-  {
-    id: 1,
-    image: shopImage,
-    title: "eCommerce Website Development Company",
-    description:
-      "Cutting-Edge eCommerce Web Development Services for Versatile Industry Needs",
-  },
-  {
-    id: 2,
-    image: ecommerceImage,
-    title: "Providing the quality-assuring Ecommerce solutions",
-    description: "Delivering Right-To-The-Need Web Development Services.",
-  },
-];
 
 const Ecommerce = () => {
   const [dropDown, setDropDown] = useState({});
@@ -75,19 +57,29 @@ const Ecommerce = () => {
             }}
             modules={[Pagination, Autoplay]}
           >
-            {dataEcommerce.map((data) => (
-              <SwiperSlide>
-                {" "}
-                <div className={Classes.heroImageEcommerce} key={data.id}>
-                  <img src={data.image} alt="slider Images" />
-
-                  <div className={Classes.heroTextEcommerce}>
-                    <h1>{data.title}</h1>
-                    <p>{data.description}</p>
-                  </div>
+            <SwiperSlide>
+              {" "}
+              <div className={Classes.heroImageEcommerce}>
+                <div className={Classes.image6}></div>
+                <div className={Classes.heroTextEcommerce}>
+                  <h1>eCommerce Website Development Company</h1>
+                  <p>
+                    Cutting-Edge eCommerce Web Development Services for
+                    Versatile Industry Needs
+                  </p>
                 </div>
-              </SwiperSlide>
-            ))}
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <div className={Classes.heroImageEcommerce}>
+                <div className={Classes.image7}></div>
+                <div className={Classes.heroTextEcommerce}>
+                  <h1>Providing the quality-assuring Ecommerce solutions</h1>
+                  <p>Delivering Right-To-The-Need Web Development Services.</p>
+                </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
         <div className={classes.home}>

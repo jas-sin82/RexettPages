@@ -74,8 +74,41 @@
   object-fit: contain;
   object-position: center;
 }
+.hero .image1 {
+  background-image: url("../../../images/webdev10.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+  margin-top: 0px;
+  object-fit: contain;
+  object-position: center;
+  transition: 2s;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
 
-.hero img {
+.hero .image2 {
+  background-image: url("../../../images/mobile-app.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+  margin-top: 0px;
+  object-fit: contain;
+  object-position: center;
+  transition: 2s;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.hero .image3 {
+  background-image: url("../../../images/eCommerce.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
   height: 500px;
   margin-top: 0px;
@@ -415,7 +448,17 @@
     left: 0%;
     z-index: 1;
   }
-  .hero img {
+  .hero .image1 {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+  }
+  .hero .image2 {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+  }
+  .hero .image3 {
     width: 100%;
     height: 450px;
     overflow: hidden;
@@ -663,38 +706,5 @@
   }
   .uiHeading {
     width: 96%;
-  }
-}
-
-/*---curve wave---*/
-
-.customShapeDividerBottom1688657783 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.customShapeDividerBottom1688657783 img {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 184px;
-  transform: rotateY(180deg);
-}
-
-@media screen and (max-width: 1023px) {
-  .customShapeDividerBottom1688657783 img {
-    width: calc(152% + 1.3px);
-    height: 154px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .customShapeDividerBottom1688657783 img {
-    width: calc(114% + 1.3px);
-    height: 0px;
   }
 }

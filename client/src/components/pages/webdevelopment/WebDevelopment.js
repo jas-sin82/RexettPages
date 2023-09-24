@@ -16,24 +16,6 @@ import WebDevelopmentServices from "../../webDevelopmentServices/WebDevelopment"
 import Questions from "../../frequentlyQuestions/Questions";
 import AddBox from "../../AddBox/AddBox";
 import ScrollUp from "../../scrollUpWindow/ScrollUp";
-import rexettMain from "../../../images/rexett-main-image.png";
-import contactImage from "../../../images/contact-form-bg.png";
-
-const dataWeb = [
-  {
-    id: 1,
-    image: rexettMain,
-    title: "Web Development Company",
-    description:
-      "We design and develop high-grade websites that provide a visually appealing and interactive web experience.",
-  },
-  {
-    id: 2,
-    image: contactImage,
-    title: "Providing the quality-assuring website solutions",
-    description: "Delivering Right-To-The-Need Web Development Services.",
-  },
-];
 
 const WebDevelopment = () => {
   const [dropDown, setDropDown] = useState({});
@@ -74,19 +56,29 @@ const WebDevelopment = () => {
             }}
             modules={[Pagination, Autoplay]}
           >
-            {dataWeb.map((data) => (
-              <SwiperSlide>
-                {" "}
-                <div className={classes.heroImage} key={data.id}>
-                  <img src={data.image} alt="slider Images" />
-
-                  <div className={classes.heroText}>
-                    <h1>{data.title}</h1>
-                    <p>{data.description}</p>
-                  </div>
+            <SwiperSlide>
+              {" "}
+              <div className={classes.heroImage}>
+                <div className={classes.image8}></div>
+                <div className={classes.heroText}>
+                  <h1>Web Development Company</h1>
+                  <p>
+                    We design and develop high-grade websites that provide a
+                    visually appealing and interactive web experience.
+                  </p>
                 </div>
-              </SwiperSlide>
-            ))}
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <div className={classes.heroImage}>
+                <div className={classes.image9}></div>
+                <div className={classes.heroText}>
+                  <h1>Providing the quality-assuring website solutions</h1>
+                  <p>Delivering Right-To-The-Need Web Development Services</p>
+                </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
         <div className={classes.home}>

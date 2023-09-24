@@ -15,11 +15,6 @@ import AppCard from "../../mobileAppData/mobileData";
 import AddBox from "../../AddBox/AddBox";
 import MobileAppQuestion from "../../frequentlyQuestions/MobileAppQuestions";
 import ScrollUp from "../../scrollUpWindow/ScrollUp";
-import webDev from "../../../images/webdev10.png";
-import mobileApp from "../../../images/mobile-app.png";
-import ecommerce from "../../../images/eCommerce.png";
-
-const data = [webDev, mobileApp, ecommerce];
 
 const MobileApp = () => {
   const [dropDown, setDropDown] = useState({});
@@ -66,14 +61,15 @@ const MobileApp = () => {
                   }}
                   modules={[Autoplay]}
                 >
-                  {data.map((image, index) => (
-                    <SwiperSlide>
-                      {" "}
-                      <div key={index}>
-                        <img src={image} alt="slider Images" />
-                      </div>
-                    </SwiperSlide>
-                  ))}
+                  <SwiperSlide>
+                    <div className={classes.image1}></div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className={classes.image2}></div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className={classes.image3}></div>
+                  </SwiperSlide>
                 </Swiper>
               </div>
             </div>

@@ -7,6 +7,7 @@ const Subscription = ({ status, message, onValidated }) => {
   const [error, setError] = useState(false);
 
   const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+  const url = process.env.REACT_APP_API_URL;
 
   const inputBlurHandler = () => {
     if (email.trim() === "") {
@@ -31,9 +32,9 @@ const Subscription = ({ status, message, onValidated }) => {
     if (email.trim()) {
       setError(false);
       try {
-        await fetch(
-          `${process.env.REACT_APP_API_URL}/api/newsletter?email=${email}`
-        ).then((result) => result.json().then((data) => console.log(data)));
+        await fetch(`${url}/api/newsletter?email=${email}`).then((result) =>
+          result.json().then((data) => console.log(data))
+        );
       } catch (err) {
         console.log(err);
       }
